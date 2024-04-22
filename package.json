@@ -1,0 +1,26 @@
+{
+  "name": "qt-tools",
+  "version": "1.0.0",
+  "description": "directives & components & tools for vue",
+  "main": "index.js",
+  "author": {
+    "name": "Partiny",
+    "email": "partiny@163.com"
+  },
+  "contributors": [
+    {
+      "name": "Partiny",
+      "email": "partiny@163.com"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "perfect-scrollbar": "^1.5.5"
+  },
+  "keywords": [
+    "vue3-directives"
+  ]
+}

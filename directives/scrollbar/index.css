@@ -1,0 +1,35 @@
+.v-scroll--always  > .ps__rail-x,
+.v-scroll--always  > .ps__rail-y {
+    opacity: 0.6;
+}
+
+.v-scroll--always.v-scroll--single {
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.v-scroll--always.v-scroll--single  > .ps__rail-x,
+.v-scroll--always.v-scroll--single  > .ps__rail-y {
+    background-color: #eee;
+    opacity: 0.9;
+}
+
+.v-scroll--single:hover  > .ps__rail-x,
+.v-scroll--single:hover  > .ps__rail-y {
+    background-color: #eee;
+    opacity: 0.9;
+}
+
+.v-scroll--single  > .ps__rail-x  > .ps__thumb-x,
+.v-scroll--single  > .ps__rail-x > .ps__thumb-x,
+.v-scroll--single  > .ps__rail-x.ps--clicking .ps__thumb-x{
+    background-color: #999;
+    height: 11px;
+}
+
+.v-scroll--single  > .ps__rail-y > .ps__thumb-y,
+.v-scroll--single  > .ps__rail-y > .ps__thumb-y,
+.v-scroll--single  > .ps__rail-y.ps--clicking .ps__thumb-y{
+    background-color: #999;
+    width: 11px;
+}
