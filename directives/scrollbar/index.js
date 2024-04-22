@@ -2,7 +2,7 @@
 import PerfectScrollbar from 'perfect-scrollbar';
 import 'perfect-scrollbar/css/perfect-scrollbar.css';
 import './index.css'
-import { dom } from '../tools'
+import { dom } from '../../tools'
 
 function handleScroll(el, modifiers) {
   if (el._ps_ instanceof PerfectScrollbar) {

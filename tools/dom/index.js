@@ -1,3 +1,3 @@
-import dom from './dom'
+import * as dom from './dom'
 
-export { dom }
+export default dom
