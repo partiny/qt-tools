@@ -2,10 +2,10 @@
 
 ```bash
 # npm 安装
-npm install i qt-vue3-directives
+npm install i qt-vue-tools
 
 # pnpm 安装
-pnpm install i qt-vue3-directives
+pnpm install i qt-vue-tools
 ```
 
 ### 使用指令
@@ -16,7 +16,7 @@ pnpm install i qt-vue3-directives
 // main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import { scrollbar } from 'qt-vue3-directives'
+import { scrollbar } from 'qt-vue-tools'
 
 const app = createApp(App)
 

@@ -1,5 +1,5 @@
 {
-  "name": "qt-tools",
+  "name": "qt-vue-tools",
   "version": "1.0.0",
   "description": "directives & components & tools for vue",
   "main": "index.js",
@@ -13,14 +13,20 @@
       "email": "partiny@163.com"
     }
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "license": "ISC",
   "dependencies": {
     "perfect-scrollbar": "^1.5.5"
   },
   "keywords": [
     "vue3-directives"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/partiny/qt-vue-tools.git"
+  },
+  "homepage": "https://github.com/partiny/qt-vue-tools",
+  "bugs": {
+    "url": "https://github.com/partiny/qt-vue-tools/issues"
+  }
 }
