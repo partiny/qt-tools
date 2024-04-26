@@ -102,7 +102,7 @@ function setPropertyColor(
   mode,
   varType
 ) {
-  let varName = `--el-color-${varType}`
+  let varName = `--el-color-${varType || 'primary'}`
   let hex = mainColor
   if (mode) {
     hex = getGradientColor(mode, mainColor, level)
