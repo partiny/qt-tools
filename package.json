@@ -1,6 +1,6 @@
 {
   "name": "qt-vue-tools",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "directives & components & tools for vue",
   "main": "index.js",
   "author": {
