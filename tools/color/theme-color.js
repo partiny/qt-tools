@@ -82,30 +82,32 @@ function getLighten(color, level) {
 function setPropertyColor(
   color,
   level,
-  type = 'lighten',
+  type = 'light',
   varType = 'primary'
 ) {
 
   let hex = color
-  if (type === 'lighten') {
+  if (type === 'light') {
     hex = getLighten(color, level)
-  } else if (type === 'darken') {
+  } else if (type === 'dark') {
     hex = getDarken(color, level)
   }
 
   let varName = `--el-color-${varType}`
   if (level) {
-    varName += `-${type==='lighten'?'light':'dark'}-${level}`
+    varName += `-${type==='light'?'light':'dark'}-${level}`
   }
   document.documentElement.style.setProperty(varName, hex)
 }
 
 function setElementTheme(
   themeColor,
+  varType,
   lightLevelList,
   darkLevelList
 ) {
   if (!themeColor) return
+  varType = varType || 'primary'
   lightLevelList = lightLevelList || [3, 5, 7, 8, 9]
   darkLevelList = darkLevelList || [2]
 
@@ -114,12 +116,12 @@ function setElementTheme(
 
   // 设置变浅的颜色值，如：--el-color-primary-light-3
   lightLevelList.forEach((level) => {
-    setPropertyColor(themeColor, level)
+    setPropertyColor(themeColor, level, 'light', varType)
   })
 
   // 设置变深的颜色值，如：--el-color-primary-dark-2
   darkLevelList.forEach((level) => {
-    setPropertyColor(themeColor, level, 'darken')
+    setPropertyColor(themeColor, level, 'dark', varType)
   })
 }
 
