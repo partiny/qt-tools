@@ -102,12 +102,14 @@ function setPropertyColor(
   mode,
   varType
 ) {
-  const hex = getGradientColor(mode, mainColor, level)
   let varName = `--el-color-${varType}`
   if (level) {
     varName += `-${mode}-${level}`
+    const hex = getGradientColor(mode, mainColor, level)
+    document.documentElement.style.setProperty(varName, hex)
+  } else {
+    document.documentElement.style.setProperty(varName, mainColor)
   }
-  document.documentElement.style.setProperty(varName, hex)
 }
 
 /**
