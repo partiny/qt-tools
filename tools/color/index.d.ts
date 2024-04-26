@@ -1,6 +1,7 @@
 interface ColorTools {
   setElementTheme(
     themeColor: string,
+    varType: string,
     lightLevelList?: number[],
     darkLevelList?: number[]
   ): void;
