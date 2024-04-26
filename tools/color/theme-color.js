@@ -61,7 +61,7 @@ function getGradientColor(
   mainColor,
   level
 ) {
-  if (!['light', 'mode'].includes(mode)) {
+  if (!['light', 'dark'].includes(mode)) {
     throw new Error('输入的颜色模式有误，可选值：light、dark')
   }
   const rgbList = getRgbList(mainColor)
