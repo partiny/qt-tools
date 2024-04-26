@@ -107,7 +107,7 @@ function setElementTheme(
 ) {
   if (!themeColor) return
   lightLevelList = lightLevelList || [3, 5, 7, 8, 9]
-  darkLevelList = darkLevelList || [3, 5, 7, 8, 9]
+  darkLevelList = darkLevelList || [2]
 
   // 设置主颜色值，如：--el-color-primary
   setPropertyColor(themeColor, 0)
